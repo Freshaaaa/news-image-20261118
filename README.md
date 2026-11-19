@@ -9,13 +9,16 @@ world's news of Wednesday 18 November 2026. Bounty: https://make.fun/bounty/news
 
 `main.ts` (Node 22, standard library only) copies `entry.png` to
 `/output/entry.png`. The image itself is drawn by `build-image.py`
-(Python 3, PIL, DejaVu fonts) as a one-page world-news summary in the
-structure the top entries use:
+(Python 3, PIL, DejaVu fonts) as a one-page world-news summary that
+combines the top entries' best features and goes further:
 
-- **40 stories, 7 regions, one page** — the date named in full ("Wednesday
-  18 November 2026") with a region count bar and "the day in numbers"
-  (141 drones fired, 126 downed, Voyager 1 at 25.9bn km, 55 factories
-  shut, Jeffries 251–11, Ebola 11,300+ cases).
+- **52 stories, 7 regions, 9 fields, one page** — the date named in full
+  ("Wednesday 18 November 2026") with a region count bar, a BY FIELD bar,
+  "the day in numbers" (141 drones fired, 126 downed, Voyager 1 at
+  25.9bn km, 55 factories shut, Jeffries 251–11, Ebola 11,300+ cases)
+  and a UTC timeline of the day (overnight drones, 07:00 UK inflation,
+  morning Xi greets Trump, 10:16 Voyager 1, 11:00 GTA VI unlocks,
+  19:00 Fed minutes, 21:00 Dow down 561, late Anthropic IPO).
 - **13 large cards** with original drawn pictograms, numbered region tags
   and verification tags (CONFIRMED / CLAIM + source): Xi greets Trump at
   APEC in Shenzhen · Bahrain and Kuwait intercept Iran's drones · Voyager 1
@@ -25,7 +28,7 @@ structure the top entries use:
   3.6% · Israeli tanks push into central Gaza · Jeffries picked for House
   Speaker · GTA VI goes on sale · Bangladesh wage protests shut 55
   factories.
-- **A world map** with 13 numbered pins, **27 more stories** in three
+- **A world map** with 13 numbered pins, **39 more stories** in four
   columns, and a **DATE CHECK** box naming what was left out on purpose
   (Tuesday stories: the Qeshm strike, Peltola's Senate win, the Kerch
   Bridge span collapse, Nvidia's quarter, the Knesset speaker vote, the
