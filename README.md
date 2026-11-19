@@ -9,21 +9,32 @@ world's news of Wednesday 18 November 2026. Bounty: https://make.fun/bounty/news
 
 `main.ts` (Node 22, standard library only) copies `entry.png` to
 `/output/entry.png`. The image itself is drawn by `build-image.py`
-(Python 3, PIL, DejaVu fonts) as a newspaper front page:
+(Python 3, PIL, DejaVu fonts) as a one-page world-news summary in the
+structure the top entries use:
 
-- **Lead:** U.S. jets strike an Iranian missile site on Qeshm Island after
-  Iran fires drones at U.S. radar sites in Bahrain and Kuwait.
-- **In brief:** Ukraine hits the Kerch Bridge for a second day · APEC opens
-  in Shenzhen ahead of the first Trump–Xi–Putin summit · Peltola wins
-  Alaska's Senate seat, giving Democrats a 56-seat majority · Russian
-  military plane crash in Siberia, 19 dead · Ebola outbreak in DR Congo
-  passes 11,000 cases · Category 5 Cyclone Xavier hits the Northern Cook
-  Islands.
-- **Also:** Microsoft's seven in-house AI models, Dhoni retires from the
-  IPL, the World Court's Myanmar ruling, oil and Hormuz.
+- **40 stories, 7 regions, one page** — the date named in full ("Wednesday
+  18 November 2026") with a region count bar and "the day in numbers"
+  (141 drones fired, 126 downed, Voyager 1 at 25.9bn km, 55 factories
+  shut, Jeffries 251–11, Ebola 11,300+ cases).
+- **13 large cards** with original drawn pictograms, numbered region tags
+  and verification tags (CONFIRMED / CLAIM + source): Xi greets Trump at
+  APEC in Shenzhen · Bahrain and Kuwait intercept Iran's drones · Voyager 1
+  reaches one light-day · Russia fires 141 drones at Ukraine · Fed minutes
+  point to more hikes · Cyclone Akvan turns toward Odisha · RSF drones
+  kill 37 in El Obeid · EU proposes a €45bn loan for Kyiv · UK inflation
+  3.6% · Israeli tanks push into central Gaza · Jeffries picked for House
+  Speaker · GTA VI goes on sale · Bangladesh wage protests shut 55
+  factories.
+- **A world map** with 13 numbered pins, **27 more stories** in three
+  columns, and a **DATE CHECK** box naming what was left out on purpose
+  (Tuesday stories: the Qeshm strike, Peltola's Senate win, the Kerch
+  Bridge span collapse, Nvidia's quarter, the Knesset speaker vote, the
+  Prague rail crash) and what has not happened yet (the Trump–Xi–Putin
+  talks, Akvan's landfall, the close of COP31).
 
-Stories are the events first reported on 18 November 2026
-(AP, Reuters, BBC, Al Jazeera). The build is fully deterministic: no
-network, no clock, no randomness — two runs write identical bytes.
+Every story on the page happened, or was first reported, on Wednesday
+18 November 2026 (AP, Reuters, AFP, BBC, CNN, CNBC, NPR, Fed, ONS, IMD,
+NASA, WHO, Amnesty). The build is fully deterministic: no network, no
+clock, no randomness — two runs write identical bytes.
 
 Run it: `mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts`
